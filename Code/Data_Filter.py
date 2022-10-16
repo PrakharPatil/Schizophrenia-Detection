@@ -45,5 +45,5 @@ for i in range(len(data_files)):
     for row in data:
         df = pd.read_csv(f'{data_files[i]}', header = None,low_memory=False)
         df.to_csv(f'{data_files[i]}', header= row,index=False )
-file.close()
+file.close();
 
